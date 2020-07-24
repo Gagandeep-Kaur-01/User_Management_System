@@ -1,0 +1,32 @@
+<div class="container">
+  
+  <div class="jumbotron mt-5">
+    
+    <h1>User Management System</h1>
+    <p> <br></p>
+    
+
+    <div align="right">
+    <a href="/auth/login" data-toggle="tooltip" title="Login to update your profile"><button type="submit" class="btn btn-primary">Sign In</button></a>
+    <a href="/auth/register" data-toggle="tooltip" title="Register an account"><button type="submit" class="btn btn-danger">Sign Up</button></a>
+  </div>
+  </div>
+</div>
+
+
+<div class="container">
+  
+    <div class="jumbotron mt-5">
+    
+        <h1>Users Profiles</h1>
+    
+        {{#if recent}}
+         <h4> Recent Users Profiles:</h4>
+            <ul>
+            {{#each recent}}
+             <li><a href="/users/{{username}}">{{username}}</a></li>
+            {{/each}}
+            </ul>
+        {{/if}}
+    </div>
+</div>

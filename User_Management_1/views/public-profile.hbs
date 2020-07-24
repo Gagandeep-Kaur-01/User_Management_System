@@ -1,0 +1,38 @@
+<div class="container mt-5">
+
+    <div class="flex-row d-flex justify-content-center">
+        
+        <div class="col-md-6">
+            {{> messages}} 
+                  
+            <div class="card">
+
+            <div class="card-header">
+                {{#if username }}
+                   <h2>{{ username }}'s profile</h2>
+            </div>
+
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                          <td>Name: </td>
+                          <td>{{ name }}</td>
+                        </tr>
+                        <tr>
+                          <td>GitHub</td>
+                          <td>{{ github }}</td>
+                        </tr>
+                        <tr>
+                           <td>Twitter</td>
+                          <td> {{ twitter }}</td>
+                        </tr>
+                        <tr>
+                          <td>Facebook</td>
+                          <td> {{ facebook }}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                {{/if}}
+                   
+                  
