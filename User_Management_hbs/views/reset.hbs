@@ -1,0 +1,37 @@
+<div class="container mt-5">
+
+   
+    <div class="flex-row d-flex justify-content-center">
+        
+        
+      <div class="col-md-6">
+         {{> messages }}
+            
+            <div class="card">
+
+               <div class="card-header">
+
+                     <b> Reset Password </b>
+               </div>
+
+               <div class="card-body">
+
+
+                  <form action="/auth/reset" method="POST"></form>
+                     <div class="form-group">
+                       <label for="password"New Password:</label>
+                        <input type="password" class="form-control" name="password" id="password">         
+                     </div>
+                     <div class="form-group">
+                       <label for="password"Confirm Password:</label>
+                        <input type="password" class="form-control" name="password" id="password">         
+                     </div>
+
+                     <button type="submit" class="btn btn-primary">Update Password</button>
+                 </form>
+    
+               </div>
+            </div>
+      </div>
+   </div>
+</div>
