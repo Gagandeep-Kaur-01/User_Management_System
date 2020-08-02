@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+    h2 User_Management_System
+    if user
+        a.btn.btn-info( href='/logout' ) Logout      
+    else       
+        a.btn.btn-info( href='users/login' ) Login
+        a.btn.btn-danger( href='users/signup' ) Signup 
